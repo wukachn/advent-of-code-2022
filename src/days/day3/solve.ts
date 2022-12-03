@@ -1,4 +1,4 @@
-import readFile from "../utils/readFile";
+import readFile from "../../utils/readFile";
 
 const solve2_ex1 = async () => {
   const puzzleInput = await readFile(`./input.txt`);
