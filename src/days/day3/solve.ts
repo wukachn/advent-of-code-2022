@@ -17,7 +17,7 @@ const solve_ex1 = async () => {
       })
     } catch (e) {}
   })
-  console.log(total)
+  console.log('Ex 1: ' + total)
 }
 
 const solve_ex2 = async () => {
@@ -41,7 +41,7 @@ const solve_ex2 = async () => {
       })
     } catch (e) {}
   })
-  console.log(total)
+  console.log('Ex 2: ' + total)
 }
 
 solve_ex1()
