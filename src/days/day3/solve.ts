@@ -1,9 +1,11 @@
 import readFile from "../../utils/readFile";
 
+const BreakException: Error = {name: 'break', message: 'break'}
+
 const solve_ex1 = async () => {
   const puzzleInput = await readFile(`./input.txt`);
   const bags = puzzleInput.split('\n')
-  const BreakException: Error = {name: 'break', message: 'break'}
+
   let total = 0
   const bagsWithSplit = bags.map((line) => [line.slice(0, line.length / 2), line.slice(line.length / 2, line.length)]);
   bagsWithSplit.forEach((bag) => {
@@ -28,7 +30,7 @@ const solve_ex2 = async () => {
   for (let i = 0; i < bags.length; i += 3) {
     groups.push([bags[i], bags[i+1], bags[i+2]])
   }
-  const BreakException: Error = {name: 'break', message: 'break'}
+
   let total = 0
   groups.forEach((group) => {
     try {
