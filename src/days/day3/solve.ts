@@ -1,6 +1,6 @@
 import readFile from "../../utils/readFile";
 
-const solve2_ex1 = async () => {
+const solve_ex1 = async () => {
   const puzzleInput = await readFile(`./input.txt`);
   const bags = puzzleInput.split('\n')
   const BreakException: Error = {name: 'break', message: 'break'}
@@ -20,7 +20,7 @@ const solve2_ex1 = async () => {
   console.log(total)
 }
 
-const solve2_ex2 = async () => {
+const solve_ex2 = async () => {
   const puzzleInput = await readFile(`./input.txt`);
   const bags = puzzleInput.split('\n')
 
@@ -44,5 +44,5 @@ const solve2_ex2 = async () => {
   console.log(total)
 }
 
-solve2_ex1()
-solve2_ex2()
+solve_ex1()
+solve_ex2()
